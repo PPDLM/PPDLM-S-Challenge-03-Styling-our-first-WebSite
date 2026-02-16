@@ -2,23 +2,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* This gray background will show on the sides of your white container */
-    background-color: #f4f7f6; 
+    background-color: #f4f7f6; /* Gray background for the whole page */
     margin: 0;
     padding: 0;
     color: #333;
-}
-
-.container {
-    max-width: 900px;
-    /* Centers the block on the screen */
-    margin: 0 auto; 
-    /* Keeps the white background inside the 900px limit */
-    background-color: white; 
-    padding: 20px 40px 40px 40px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    /* Ensures the white block starts after the nav */
-    display: block; 
 }
 
 header {
@@ -38,15 +25,12 @@ header h1 {
 header p {
     font-weight: 300;
     color: #bdc3c7;
-    margin: 0;
 }
 
 nav {
     background-color: #34495e;
     text-align: center;
     padding: 10px 0;
-    /* Keeps the nav separate from the container block */
-    margin-bottom: 20px; 
 }
 
 nav ul {
@@ -66,12 +50,19 @@ nav ul li a {
     font-weight: 700;
     font-size: 0.9rem;
     padding: 8px 15px;
-    border-radius: 4px;
 }
 
 nav ul li a:hover {
     background-color: #007bff;
-    color: white;
+    border-radius: 4px;
+}
+
+/* Container is now transparent to avoid the "Big White Box" look */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: transparent; 
+    padding: 20px;
 }
 
 h2 {
@@ -79,15 +70,17 @@ h2 {
     color: #2c3e50;
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
+/* Only the tool cards remain as white boxes */
 .tool-card {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
-    background: #fff;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .tool-card h3 {
@@ -97,7 +90,7 @@ h2 {
 
 blockquote {
     border-left: 5px solid #007bff;
-    background: #f1f7ff;
+    background: #e3f2fd;
     padding: 15px;
     font-style: italic;
     margin: 20px 0;
@@ -129,5 +122,4 @@ footer {
     text-align: center;
     padding: 40px 20px;
     color: #7f8c8d;
-    font-size: 0.8rem;
 }
